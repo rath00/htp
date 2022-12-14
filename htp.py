@@ -446,5 +446,5 @@ def return_img(img_local_path):
         img_stream = base64.b64encode(img_stream).decode()
     return img_stream
 
-detect('/Users/wen/Downloads/HTP/htp-2/result-pic/2022-11-23-003716.png')#測試/Users/wen/Downloads/auto-label/picture/20220608-021.jpg
+#detect('/Users/wen/Downloads/HTP/htp-2/result-pic/2022-11-23-003716.png')#測試/Users/wen/Downloads/auto-label/picture/20220608-021.jpg
 
