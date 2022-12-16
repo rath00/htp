@@ -172,7 +172,7 @@ def detect(image_position):
     # 儲存檔案名稱到excel中
     name=os.path.basename(image_position)
     name = name.split(".")[0] #去掉檔案格式，取得檔案原名稱
-    wb = openpyxl.load_workbook('/HTP.xlsx', data_only=True) #開啟HTP.xlsx檔案
+    wb = openpyxl.load_workbook(UPLOAD_FOLDER+'/HTP.xlsx', data_only=True) #開啟HTP.xlsx檔案
     s1 = wb['工作表1']        # 取得工作表名稱為「工作表1」的內容
     s2 = wb.active           # 取得開啟試算表後立刻顯示的工作表 ( 範例為工作表 2 )
     s1.insert_rows(2)
